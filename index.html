@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type = "text/javascript" src ="setlist.json">
+	</script>
+	<meta charset="UTF-8">
+	<title>Setlist</title>
+</head>
+<body>
+	<h1 style = "text-align: center;"> Tonight's Setlist </h1>
+	Filter Your Music: 
+	<select id = "genreselect">
+		<option value = "all"> All </option>
+		<option value = "Pop"> Pop </option>
+		<option value = "Dancehall"> Dancehall </option>
+		<option value = "Rap"> Rap </option>
+		<option value = "Bollywood"> Bollywood </option>
+
+	</select>
+	<button onclick="filterMusic()"> Filter! </button>	
+	<br> <div id = 'serialized' style = "text-align: center"> </div>
+
+	<script lang="javascript">
+		var songs_array = [];
+        var songlist = JSON.parse(setlist);
+        for (key in songlist) {
+        	var nextSong = new Object();
+        	nextSong.song = songlist[key]["Song"];
+        	nextSong.artist = songlist[key]["Artist"]
+        	nextSong.genre = songlist[key]["Genre"]
+        	nextSong.year = songlist[key]["Year"];
+        	songs_array.push(nextSong);
+        } 
+        printAll();
+        function printAll() {
+        	document.getElementById("serialized").innerHTML = "";
+        	for (var i = 0; i < songs_array.length; i++) {
+        		document.getElementById("serialized").innerHTML += "<h4>" + 
+        		songs_array[i].song  + "</h4> Artist: " + songs_array[i].artist +
+        		"<br> Genre(s): " + songs_array[i].genre + "<br> Year: " + 
+                	songs_array[i].year + "<br> <hr>";
+        	}
+        }
+
+
+        function filterMusic() {
+        	if (document.getElementById("genreselect").value == "all") {
+        		printAll();
+        	} else {
+        		document.getElementById("serialized").innerHTML = "";
+        		for (var i = 0; i < songs_array.length; i++){
+        			var genre = document.getElementById("genreselect").value;
+        			if (genre == songs_array[i].genre[0] || genre == songs_array[i].genre[1]) {
+        				document.getElementById("serialized").innerHTML += "<h4>" + 
+                        		songs_array[i].song  + "</h4> Artist: " + songs_array[i].artist +
+                       			"<br> Genre(s): " + songs_array[i].genre + "<br> Year: " + 
+                       			songs_array[i].year + "<br> <hr>";
+        			}
+        		}
+        	}
+        }
+    </script>
+</body>
+</html>
