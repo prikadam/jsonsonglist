@@ -1,1 +1,10 @@
-setlist = '[{"Song": "Stronger","Artist": ["Raveena"], "Genre": ["R&B"], "Year": 2019},{"Song": "Roxanne","Artist": ["Arizona Zervas"], "Genre": ["Rap"], "Year": 2019},{"Song": "Sofia","Artist": ["Clairo"], "Genre": ["Rock"], "Year": 2019},{"Song": "July","Artist": ["Noah Cyrus"], "Genre": ["Pop"], "Year": 2019},{"Song": "Pluto Projector","Artist": ["Rex Orange County"], "Genre": ["Indie"], "Year": 2019},{"Song": "Circles","Artist": ["Post Malone"], "Genre": ["Rap"], "Year": 2019},{"Song": "Again","Artist": ["Kehlani"], "Genre": ["Pop"], "Year": 2018},{"Song": "Nothing","Artist": ["Bruno Major"], "Genre": ["Indie"], "Year": 2020},{"Song": "Gravity","Artist": ["Sara Bareilles"], "Genre": ["Pop"], "Year": 2007},{"Song": "Happier than Ever","Artist": ["Billie Eilish"], "Genre": ["Pop"], "Year": 2021}]'
+setlist = '[{"Song": "Stronger","Artist": ["Raveena"], "Genre": ["R&B"], "Year": 2019},
+{"Song": "Roxanne","Artist": ["Arizona Zervas"], "Genre": ["Rap"], "Year": 2019},
+{"Song": "Sofia","Artist": ["Clairo"], "Genre": ["Rock"], "Year": 2019},
+{"Song": "July","Artist": ["Noah Cyrus"], "Genre": ["Pop"], "Year": 2019},
+{"Song": "Pluto Projector","Artist": ["Rex Orange County"], "Genre": ["Indie"], "Year": 2019},
+{"Song": "Circles","Artist": ["Post Malone"], "Genre": ["Rap"], "Year": 2019},
+{"Song": "Again","Artist": ["Kehlani"], "Genre": ["Pop"], "Year": 2018},
+{"Song": "Nothing","Artist": ["Bruno Major"], "Genre": ["Indie"], "Year": 2020},
+{"Song": "Gravity","Artist": ["Sara Bareilles"], "Genre": ["Pop"], "Year": 2007},
+{"Song": "Happier than Ever","Artist": ["Billie Eilish"], "Genre": ["Pop"], "Year": 2021}]'
